@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/static/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Roboto&family=Sacramento&family=Square+Peg&display=swap" rel="stylesheet">
+  <title>Plasma Donor Application</title>
+</head>
+
+<body class="home">
+  <div class="nav">
+    <ul>
+      <li><a href="/login">Logout</a></li>
+      <li><a href="/stats">My History</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/">Home</a></li>
+  </ul>
+  </div>
+  <h1 class="welcome">Welcome!</h1>
+  <h2 class="c">Plasma donation can save lives.</h2>
+  <iframe src="https://giphy.com/embed/AUBkmecnhIHi16giZy" style="float:left; padding-top:8px" width="40" height="180" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/kochstrasse-hannover-agencylife-agenturleben-AUBkmecnhIHi16giZy"></a></p>
+
+  <button class="hb"><a href="/donate">Donate Plasma</a></button>
+  <br>
+  <button class="hb"><a href="/request">Request Plasma</a></button>
+  <div class="scroll-left">
+        <p>For more infromation visit our about page</p>
+  </div>
+  <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "3eb0d1b0-5c05-42b7-afe8-3dee08ee30dc", // The ID of this integration.
+      region: "au-syd", // The region your integration is hosted in.
+      serviceInstanceID: "5750fd25-a225-4a47-9a56-a014d25eebdc", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+</body>
+
+</html>
